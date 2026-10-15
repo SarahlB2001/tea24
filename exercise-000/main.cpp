@@ -5,6 +5,16 @@
 
 int main(int argc, char **argv) {
     int var = 4711;
+    int x = 10;
+    int *p = &x;
+
+    fmt::print("Wert von x: {} und die Adresse von x:{}",x,fmt::ptr(&x));
+    fmt::print("Wert von p: {} und die Adresse von p:{}",*p,fmt::ptr(&p));
+
+    *p = 42;
+    fmt::print("neuer Wert von x: {} und der Wert auf den p zeigt:{}",x,*p);
+
+
 
     /**
      * The {fmt} lib is a cross platform library for printing and formatting text
@@ -15,6 +25,7 @@ int main(int argc, char **argv) {
 
     /* INSERT YOUR CODE HERE */
         fmt::print("Value of var: {}!\n", var);
+        fmt::print("Value of argc: {}!\n", argc);
 
 
     return 0; /* exit gracefully*/
