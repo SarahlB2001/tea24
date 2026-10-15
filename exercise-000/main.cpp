@@ -7,6 +7,8 @@ int main(int argc, char **argv) {
     int var = 4711;
     int x = 10;
     int *p = &x;
+    double* d = new double(3.1415);   // Speicher reservieren UND initialisieren
+
 
     fmt::print("Wert von x: {} und die Adresse von x:{}",x,fmt::ptr(&x));
     fmt::print("Wert von p: {} und die Adresse von p:{}",*p,fmt::ptr(&p));
@@ -14,6 +16,8 @@ int main(int argc, char **argv) {
     *p = 42;
     fmt::print("neuer Wert von x: {} und der Wert auf den p zeigt:{}",x,*p);
 
+    fmt::println("Wert von d: {} und Adresse von d:{}", *d,fmt::ptr(&d));
+    delete d;                         // Speicher freigeben
 
 
     /**
