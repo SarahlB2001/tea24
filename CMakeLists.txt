@@ -1,4 +1,4 @@
-add_subdirectory(exercise-000)cmake_minimum_required (VERSION 3.10.2)
+cmake_minimum_required (VERSION 3.10.2)
 
 # Set the project name to your project name, template isn't very descriptive
 project (tea24)
