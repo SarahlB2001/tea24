@@ -8,7 +8,7 @@ git branch -a
 git switch main
 git fetch --all
 # create a new local branch based on the origin main
-git switch -c solution-001 upstream/main
+git switch -c solution-001 origin/main
 # perform changes
 git add exercise-001
 git commit -m "feat: add exercise number two"
