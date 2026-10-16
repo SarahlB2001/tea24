@@ -1,4 +1,4 @@
-cmake_minimum_required (VERSION 3.10.2)
+add_subdirectory(exercise-000)cmake_minimum_required (VERSION 3.10.2)
 
 # Set the project name to your project name, template isn't very descriptive
 project (tea24)
@@ -61,6 +61,7 @@ include(cmake/Doxygen.cmake)
 
 # Exercises & solutions
 add_subdirectory(exercise-000)
+add_subdirectory(exercise-001)
 
 # templates
 #add_subdirectory(templates)
